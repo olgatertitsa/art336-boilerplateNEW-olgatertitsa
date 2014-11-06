@@ -237,8 +237,25 @@ $padding: 6px;
     box-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .fixed {
     position: fixed;
     width: 100%;
 }
+
+@media screen and (max-width: $tablet) {
+    .row .fixed-nav  {
+        position: absolute;
+        top: 0; //only work with position fixed and absolute// when aboslute its based on parent element// when fixed its based on its location within browwer window//
+        
+    }
+}
+
+.fixed-clear {
+    padding-top: $gutter;
+}
+
 
